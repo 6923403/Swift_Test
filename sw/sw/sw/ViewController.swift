@@ -21,22 +21,46 @@ class ViewController: NSViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         welcomeMessage = "Hello"
-        t1()
-        t2()
-        t3()
-        t4()
+        //t1()
+        //t2()
+        //t3()
+        //t4()
+        t5()
         
         // Do any additional setup after loading the view.
     }
     
-    func t4() {
-        let possibleNumber = 2.0001
+    enum SandwichError: Error {
+        case outOfCleanDishes                     //选择无效
+        case missingIngredients(ingredients: String) //金额不足
+        case outOfStock                             //缺货
+    }
+
+    func t5()
+    {
+        let possibleString: String? = "An optional string."
+        let forcedString: String = possibleString! // 需要感叹号来获取值
+
+        let assumedString: String! = "An implicitly unwrapped optional string."
+        let implicitString: String = assumedString  // 不需要感叹号
         
+        let optionalString = assumedString
+        // optionalString 的类型是 "String?"，assumedString 也没有被强制解析。
+
+        if assumedString != nil {
+            print(assumedString!)
+        }
+        // 输出“An implicitly unwrapped optional string.”
+    }
+    
+    func t4() {
+        let possibleNumber = "123"
         if let actualNumber = Int(possibleNumber) {
             print("\'\(possibleNumber)\' has an integer value of \(actualNumber)")
         } else {
             print("\'\(possibleNumber)\' could not be converted to an integer")
         }
+        // 输出“'123' has an integer value of 123”
         // 输出“'123' has an integer value of 123”
     }
     
