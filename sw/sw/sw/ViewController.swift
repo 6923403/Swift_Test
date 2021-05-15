@@ -25,15 +25,16 @@ class ViewController: NSViewController {
         //t2()
         //t3()
         //t4()
-        t5()
+        //t5()
+        t6()
         
         // Do any additional setup after loading the view.
     }
     
-    enum SandwichError: Error {
-        case outOfCleanDishes                     //选择无效
-        case missingIngredients(ingredients: String) //金额不足
-        case outOfStock                             //缺货
+    func t6() {
+        let age = -3
+        assert(age >= 0, "A person's age cannot be less than zero")
+        // 因为 age < 0，所以断言会触发
     }
 
     func t5()
@@ -43,7 +44,6 @@ class ViewController: NSViewController {
 
         let assumedString: String! = "An implicitly unwrapped optional string."
         let implicitString: String = assumedString  // 不需要感叹号
-        
         let optionalString = assumedString
         // optionalString 的类型是 "String?"，assumedString 也没有被强制解析。
 
