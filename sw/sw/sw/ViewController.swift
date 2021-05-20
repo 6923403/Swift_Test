@@ -4,6 +4,7 @@
 //
 //  Created by Vcvc on 2021/5/9.
 //
+// Re: https://swiftgg.gitbook.io/swift/swift-jiao-cheng
 
 import Cocoa
 
@@ -63,16 +64,53 @@ class ViewController: NSViewController {
         //re = arithmeticMean(3, 8.25, 18.75)
         //print("re: \(re)")
         // 返回 10.0, 是这 3 个数的平均数。
-        var mathFunction: (Int, Int) -> Int = addTwoInts
-        print("Result: \(mathFunction(2, 3))")
-        // Prints "Result: 5"
+//        var someInt = 3
+//        var anotherInt = 107
+//        swapTwoInts(&someInt, &anotherInt)
+//        print("someInt is now \(someInt), and anotherInt is now \(anotherInt)")
+//        // 打印“someInt is now 107, and anotherInt is now 3”
+//        var mathFunction: (Int, Int) -> Int = addTwoInts
+//        print("Result: \(mathFunction(2, 3))")
+//        // Prints "Result: 5"
+//
+//        var mathFunction2 = multiplyTwoInts
+//        print("Result: \(mathFunction2(2, 3))")
+//        // Prints "Result: 6"
+//
+//        printMathResult(addTwoInts, 3, 5)
+//        // 打印“Result: 8”
         
-        var mathFunction2 = multiplyTwoInts
-        print("Result: \(mathFunction2(2, 3))")
-        // Prints "Result: 6"
+//        var currentValue = 3
+//        let moveNearerToZero = chooseStepFunction(backward: currentValue > 0)
+//        print(moveNearerToZero(currentValue))
+
+        // moveNearerToZero 现在指向 stepBackward() 函数。
+//        var currentValue = 9
+//        let moveNearerToZero = chooseStepFunction2(backward: currentValue > 0)
+//        // moveNearerToZero now refers to the nested stepForward() function
+//        while currentValue != 0 {
+//            print("\(currentValue)... ")
+//            currentValue = moveNearerToZero(currentValue)
+//        }
+
         
-        printMathResult(addTwoInts, 3, 5)
-        // 打印“Result: 8”
+    } //*
+    
+    func chooseStepFunction2(backward: Bool) -> (Int) -> Int {
+        func stepForward2(input: Int) -> Int {
+            return input + 1
+            
+        }
+        
+        func stepBackward2(input: Int) -> Int {
+            return input - 1
+            
+        }
+        return backward ? stepBackward2 : stepForward2
+    }
+
+    func chooseStepFunction(backward: Bool) -> (Int) -> Int {
+        return backward ? stepBackward : stepForward
     }
     
     func stepForward(_ input: Int) -> Int {
@@ -84,6 +122,13 @@ class ViewController: NSViewController {
     
     func printMathResult(_ mathFunction: (Int, Int) -> Int, _ a: Int, _ b: Int) {
         print("Result: \(mathFunction(a, b))")
+    }
+    
+    
+    func swapTwoInts(_ a: inout Int, _ b: inout Int) {
+        let temporaryA = a
+        a = b
+        b = temporaryA
     }
     
     func addTwoInts(_ a: Int, _ b: Int) -> Int {
