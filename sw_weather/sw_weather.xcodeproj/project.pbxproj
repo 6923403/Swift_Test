@@ -35,7 +35,7 @@
 /* Begin PBXFileReference section */
 		0084F038267241FF00C30F48 /* sw_weather.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = sw_weather.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0084F03B267241FF00C30F48 /* sw_weatherApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = sw_weatherApp.swift; sourceTree = "<group>"; };
-		0084F03D267241FF00C30F48 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		0084F03D267241FF00C30F48 /* ContentView.swift */ = {isa = PBXFileReference; indentWidth = 4; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; tabWidth = 4; };
 		0084F03F2672420000C30F48 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0084F0422672420000C30F48 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		0084F0442672420000C30F48 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };

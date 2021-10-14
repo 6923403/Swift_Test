@@ -1,17 +1,15 @@
 //
 //  ContentView.swift
-//  sw_weather
+//  practice
 //
-//  Created by Vcvc on 2021/6/10.
+//  Created by Vcvc on 2021/6/26.
 //
 
 import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        Text("Hello, world!")
-            .font(/*@START_MENU_TOKEN@*/.title/*@END_MENU_TOKEN@*/)
-            .padding()
+        LandmarkList()
     }
 }
 
