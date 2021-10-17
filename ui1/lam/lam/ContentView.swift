@@ -9,10 +9,11 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        VStack {
+        VStack(alignment: .leading) {
             Circleimage()
-                .offset(y: -110)
+                .offset(y: -100)
                 .padding(.bottom, -100)
+                
             
             VStack(alignment: .leading) {
                 Text("Hello, Ui.")

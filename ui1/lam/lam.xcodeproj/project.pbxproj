@@ -13,6 +13,7 @@
 		007E53DD27188F1800BFC461 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 007E53DC27188F1800BFC461 /* Preview Assets.xcassets */; };
 		007E53E827188F1900BFC461 /* lamTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 007E53E727188F1900BFC461 /* lamTests.swift */; };
 		007E53F327188F1900BFC461 /* lamUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 007E53F227188F1900BFC461 /* lamUITests.swift */; };
+		007E5405271897D300BFC461 /* CircleImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 007E5404271897D300BFC461 /* CircleImage.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +46,7 @@
 		007E53EE27188F1900BFC461 /* lamUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = lamUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		007E53F227188F1900BFC461 /* lamUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = lamUITests.swift; sourceTree = "<group>"; };
 		007E53F427188F1900BFC461 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		007E5404271897D300BFC461 /* CircleImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CircleImage.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,6 +100,7 @@
 				007E53D527188F1800BFC461 /* lamApp.swift */,
 				007E53D727188F1800BFC461 /* ContentView.swift */,
 				007E53D927188F1800BFC461 /* Assets.xcassets */,
+				007E5404271897D300BFC461 /* CircleImage.swift */,
 				007E53DE27188F1800BFC461 /* Info.plist */,
 				007E53DB27188F1800BFC461 /* Preview Content */,
 			);
@@ -260,6 +263,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				007E53D827188F1800BFC461 /* ContentView.swift in Sources */,
+				007E5405271897D300BFC461 /* CircleImage.swift in Sources */,
 				007E53D627188F1800BFC461 /* lamApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -347,7 +351,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -402,7 +406,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -422,12 +426,12 @@
 				DEVELOPMENT_TEAM = 629XQDUFL6;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = lam/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.vcspace.vc.lam;
+				PRODUCT_BUNDLE_IDENTIFIER = com.vcspace.vc;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -444,12 +448,12 @@
 				DEVELOPMENT_TEAM = 629XQDUFL6;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = lam/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.vcspace.vc.lam;
+				PRODUCT_BUNDLE_IDENTIFIER = com.vcspace.vc;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
